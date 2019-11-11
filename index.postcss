@@ -1,0 +1,91 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+hr {
+  background-color: rgb(68, 68, 68);
+  height: 1px;
+  width: 80%;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/roboto/Roboto-Regular.woff2) format("woff2"),
+    url(/roboto/Roboto-Regular.woff) format("woff");
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+select {
+  @apply border-2;
+  @apply p-1;
+  @apply rounded;
+  @apply bg-white;
+  width: 100%;
+}
+
+form input {
+  @apply m-1;
+}
+
+button {
+  @apply px-3;
+  @apply py-1;
+  @apply rounded;
+  @apply shadow;
+  transition: 0.1s;
+
+  &:hover {
+    @apply bg-gray-200;
+  }
+
+  &.none {
+    @apply shadow-none;
+  }
+
+  &.primary {
+    @apply bg-blue-500;
+    @apply text-white;
+
+    &:hover {
+      @apply bg-blue-600;
+    }
+  }
+}
+
+.hlc-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
